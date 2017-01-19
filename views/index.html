@@ -1,138 +1,161 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-gb" dir="ltr">
+
 <head>
-    <title></title>
-    <!--<link rel="stylesheet" href="/core/css/uikit.min.css"/>
-    <link rel="stylesheet" href="/core/css/uikit.almost-flat.min.css"/>-->
-    <link rel="stylesheet" href="/core/css/uikit.gradient.min.css"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UIkit中文网</title>
+    <!--   <meta name="description" content="UIkit是YOOtheme团队开发的一款轻量级、模块化的前端框架，可快速构建强大的前端web界面。UIKit使用的变量基于LESS，具有体积小、模块化、可轻松地自定义主题及响应式设计可在多种环境中使用等特点。UIkit中文网为广大国内开发者提供详尽的中文文档、代码实例等，帮助开发者快速掌握并使用这一框架。">
+       <meta name="author" content="UIkit中文网">
+
+       <meta name="keywords" content="UIkit,轻量级,前端框架,响应式布局,基于LESS,CSS framework,js框架,getuikit,uikit开发,uikit代码,uikit入门">-->
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon.png">
+    <link rel="stylesheet" href="/core/css/uikit.gradient.css"/>
+    <link rel="stylesheet" href="/css/index.css">
     <script src="/js/jquery.min.js"></script>
-    <script src="/core/js/uikit.min.js"></script>
+    <script src="/core/js/uikit.js"></script>
+    <script src="/core/js/components/sticky.js"></script>
+
 </head>
-<body>
-<div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
 
-    <nav class="uk-navbar uk-margin-large-bottom">
-        <a class="uk-navbar-brand uk-hidden-small" href="layouts_frontpage.html">Brand</a>
+<body class="tm-background">
+<nav class="tm-navbar uk-navbar uk-navbar-attached" data-uk-sticky="{boundary:'true'}" style="z-index: 1000;">
+    <div class="uk-container uk-container-center">
+
+        <a class="uk-navbar-brand uk-hidden-small" href="index.html"><img class="uk-margin uk-margin-remove"
+                                                                          src="/images/xwc_logo.png" width="32"
+                                                                          height="32" title="新网虫" alt="新网虫"><span
+                class="logo-font">新网虫</span></a>
+
         <ul class="uk-navbar-nav uk-hidden-small">
-            <li>
-                <a href="layouts_frontpage.html">Frontpage
-                    <ul class="uk-navbar-nav uk-hidden-small">
-                        <li>
-                            <a href="layouts_frontpage.html">Frontpage</a>
-                        </li>
-                        <li class="uk-active">
-                            <a href="layouts_portfolio.html">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="layouts_blog.html">Blog</a>
-                        </li>
-                        <li>
-                            <a href="layouts_documentation.html">Documentation</a>
-                        </li>
-                        <li>
-                            <a href="layouts_contact.html">Contact</a>
-                        </li>
-                        <li>
-                            <a href="layouts_login.html">Login</a>
-                        </li>
+            <li class="uk-active"><a href="/documentation_get-started.html">首页</a></li>
+            <li class="uk-parent" data-uk-dropdown>
+                <a href="javascript:void(0);">娱乐</a>
+                <div class="uk-dropdown xwc-uk-dropdown" >
+                    <ul>
+                        <li><a href="/lightbox.html">搞笑</a></li>
+                        <li><a href="/autocomplete.html">明星</a></li>
+                        <li><a href="/datepicker.html">女神</a></li>
+                        <li><a href="/htmleditor.html">美妆</a></li>
+                        <li><a href="/slider.html">男神</a></li>
+                        <li><a href="/slideset.html">萌娃</a></li>
+                        <li><a href="/slideshow.html">美食</a></li>
+                        <li><a href="/parallax.html">音乐</a></li>
+                        <li><a href="/accordion.html">舞蹈</a></li>
+                        <li><a href="/notify.html">宠物</a></li>
+                        <li><a href="/search.html">吃秀</a></li>
+                        <li><a href="/nestable.html">手工</a></li>
+                        <li><a href="/sortable.html">影视</a></li>
+                        <li><a href="/sticky.html">生活</a></li>
+                        <li><a href="/timepicker.html">健身</a></li>
+                        <li><a href="/tooltip.html">世界</a></li>
                     </ul>
-                </a>
+                </div>
             </li>
-            <li class="uk-active">
-                <a href="layouts_portfolio.html">Portfolio</a>
-            </li>
-            <li>
-                <a href="layouts_blog.html">Blog</a>
-            </li>
-            <li>
-                <a href="layouts_documentation.html">Documentation</a>
-            </li>
-            <li>
-                <a href="layouts_contact.html">Contact</a>
-            </li>
-            <li>
-                <a href="layouts_login.html">Login</a>
-            </li>
+            <li><a href="/core.html">新闻</a></li>
+            <li><a href="/customizer.html">体育</a></li>
+            <li><a href="showcase/index.html">军事</a></li>
+            <li><a href="/tutorials.html">剧集</a></li>
+            <li><a href="/tutorials.html">电影</a></li>
         </ul>
-        <a href="#offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
-        <div class="uk-navbar-brand uk-navbar-center uk-visible-small">Brand</div>
-    </nav>
-
-    <div class="uk-grid" data-uk-grid-margin>
-        <div class="uk-width-1-1">
-            <h1 class="uk-heading-large">Portfolio</h1>
-            <p class="uk-text-large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                incididunt ut.</p>
-        </div>
-    </div>
-
-    <div class="uk-grid" data-uk-grid-margin>
-        <div class="uk-width-1-1">
-
-
-            <ul id="switcher-content" class="uk-switcher">
-
-                <li class="uk-active">
-                    <div class="uk-grid" data-uk-grid-margin>
-                        <%
-                        for(var i=0;i< vs.length;i++){
-                        %>
-                        <div class="uk-width-medium-1-3">
-                            <div class="uk-thumbnail uk-overlay-hover" data-uk-modal="{target:'#modal-1'}">
-                                <figure class="uk-overlay">
-                                    <img width="600" height="400"
-                                         src="<%=vs[i].imgUrl %>"
-                                         alt="">
-                                    <figcaption
-                                            class="uk-overlay-panel uk-overlay-icon uk-overlay-background uk-overlay-fade"></figcaption>
-                                    <a class="uk-position-cover" href="#"></a>
-                                </figure>
-                            </div>
-                            <div id="modal-1" class="uk-modal">
-                                <div class="uk-modal-dialog uk-modal-dialog-lightbox">
-                                    <a href="" class="uk-modal-close uk-close uk-close-alt"></a>
-                                    <img width="600" height="400"
-                                         src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNjAwcHgiIGhlaWdodD0iNDAwcHgiIHZpZXdCb3g9IjAgMCA2MDAgNDAwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2MDAgNDAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IGZpbGw9IiNGNUY1RjUiIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIi8+DQo8ZyBvcGFjaXR5PSIwLjciPg0KCTxwYXRoIGZpbGw9IiNEOEQ4RDgiIGQ9Ik0yMjguMTg0LDE0My41djExM2gxNDMuNjMydi0xMTNIMjI4LjE4NHogTTM2MC4yNDQsMjQ0LjI0N0gyNDAuNDM3di04OC40OTRoMTE5LjgwOEwzNjAuMjQ0LDI0NC4yNDcNCgkJTDM2MC4yNDQsMjQ0LjI0N3oiLz4NCgk8cG9seWdvbiBmaWxsPSIjRDhEOEQ4IiBwb2ludHM9IjI0Ni44ODEsMjM0LjcxNyAyNzEuNTcyLDIwOC43NjQgMjgwLjgyNCwyMTIuNzY4IDMxMC4wMTYsMTgxLjY4OCAzMjEuNTA1LDE5NS40MzQgDQoJCTMyNi42ODksMTkyLjMwMyAzNTQuNzQ2LDIzNC43MTcgCSIvPg0KCTxjaXJjbGUgZmlsbD0iI0Q4RDhEOCIgY3g9IjI3NS40MDUiIGN5PSIxNzguMjU3IiByPSIxMC43ODciLz4NCjwvZz4NCjwvc3ZnPg0K"
-                                         alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <%
-                        }
-                        %>
-                    </div>
-                </li>
-
+        <div class="uk-navbar-flip">
+            <ul class="uk-navbar-nav">
+                <li><a style="color: #ff3c00;font-weight: 700;" href="">登录</a></li>
+                <li><span style="display: inline-block;margin-top: 9px;">|</span></li>
+                <li><a style="color: #ff3c00;font-weight: 700;" href="">注册</a></li>
             </ul>
 
         </div>
+        <a style="color: #ff3c00" href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+        <!--<div class="uk-navbar-brand uk-navbar-center uk-visible-small"><img class="uk-margin uk-margin-remove"
+                                                                            src="/images/xwc_logo.png" width="32"
+                                                                            height="32" title="新网虫" alt="新网虫"></div>-->
     </div>
+</nav>
+<div class="header-nav"><h1>娱</h1></div>
+<div class="tm-section tm-section-color-1 tm-section-colored" style="margin-top: 25px;">
+    <div class="uk-container uk-container-center uk-text-center">
 
+        <div class="uk-grid" data-uk-grid-margin>
+            <%
+            for(var i=0;i< vs.length;i++){
+            %>
+            <div class="uk-width-medium-1-6 uk-width-small-1-3">
+                <div class="uk-thumbnail">
+                    <img src="<%=vs[i].imgUrl %>" width="200" height="100" alt="">
+                    <div class="uk-thumbnail-caption"><%=vs[i].title%></div>
+                </div>
+                <!--<div class="uk-thumbnail uk-overlay-hover" data-uk-modal="{target:'#modal-1'}">
+                    <figure class="uk-overlay">
+                        <img width="600" height="400"
+                             src="<%=vs[i].imgUrl %>"
+                             alt="">
+                        <figcaption
+                                class="uk-overlay-panel uk-overlay-icon uk-overlay-background uk-overlay-fade">乐山大佛水电费水电费但是</figcaption>
+                        <a class="uk-position-cover" href="#"></a>
+                    </figure>
+                </div>-->
+                <div id="modal-1" class="uk-modal">
+                    <div class="uk-modal-dialog uk-modal-dialog-lightbox">
+                        <a href="" class="uk-modal-close uk-close uk-close-alt"></a>
+                        <img width="600" height="400"
+                             src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjQsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNjAwcHgiIGhlaWdodD0iNDAwcHgiIHZpZXdCb3g9IjAgMCA2MDAgNDAwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2MDAgNDAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IGZpbGw9IiNGNUY1RjUiIHdpZHRoPSI2MDAiIGhlaWdodD0iNDAwIi8+DQo8ZyBvcGFjaXR5PSIwLjciPg0KCTxwYXRoIGZpbGw9IiNEOEQ4RDgiIGQ9Ik0yMjguMTg0LDE0My41djExM2gxNDMuNjMydi0xMTNIMjI4LjE4NHogTTM2MC4yNDQsMjQ0LjI0N0gyNDAuNDM3di04OC40OTRoMTE5LjgwOEwzNjAuMjQ0LDI0NC4yNDcNCgkJTDM2MC4yNDQsMjQ0LjI0N3oiLz4NCgk8cG9seWdvbiBmaWxsPSIjRDhEOEQ4IiBwb2ludHM9IjI0Ni44ODEsMjM0LjcxNyAyNzEuNTcyLDIwOC43NjQgMjgwLjgyNCwyMTIuNzY4IDMxMC4wMTYsMTgxLjY4OCAzMjEuNTA1LDE5NS40MzQgDQoJCTMyNi42ODksMTkyLjMwMyAzNTQuNzQ2LDIzNC43MTcgCSIvPg0KCTxjaXJjbGUgZmlsbD0iI0Q4RDhEOCIgY3g9IjI3NS40MDUiIGN5PSIxNzguMjU3IiByPSIxMC43ODciLz4NCjwvZz4NCjwvc3ZnPg0K"
+                             alt="">
+                    </div>
+                </div>
+            </div>
+            <%
+            }
+            %>
+        </div>
+    </div>
 </div>
 
-<div id="offcanvas" class="uk-offcanvas">
+<div class="tm-footer" style="margin:30px auto; font-size: 16px;">
+    <div class="uk-container uk-container-center uk-text-center">
+        <div class="uk-panel">
+            <p>Copyright &copy; 2016 xinwangchong.com&nbsp;&nbsp;|&nbsp;&nbsp;京ICP备16046202号</p>
+        </div>
+    </div>
+</div>
+
+<div id="tm-offcanvas" class="uk-offcanvas">
+
     <div class="uk-offcanvas-bar">
-        <ul class="uk-nav uk-nav-offcanvas">
-            <li>
-                <a href="layouts_frontpage.html">Frontpage</a>
+
+        <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon " data-uk-nav="{ multiple: true }">
+            <li><a href="/documentation_get-started.html">首页</a></li>
+            <li class="uk-parent"><a href="#">娱乐</a>
+                <ul class="uk-nav-sub">
+                    <li><a href="/lightbox.html">搞笑</a></li>
+                    <li><a href="/autocomplete.html">明星</a></li>
+                    <li><a href="/datepicker.html">女神</a></li>
+                    <li><a href="/htmleditor.html">美妆</a></li>
+                    <li><a href="/slider.html">男神</a></li>
+                    <li><a href="/slideset.html">萌娃</a></li>
+                    <li><a href="/slideshow.html">美食</a></li>
+                    <li><a href="/parallax.html">音乐</a></li>
+                    <li><a href="/accordion.html">舞蹈</a></li>
+                    <li><a href="/notify.html">宠物</a></li>
+                    <li><a href="/search.html">吃秀</a></li>
+                    <li><a href="/nestable.html">手工</a></li>
+                    <li><a href="/sortable.html">影视</a></li>
+                    <li><a href="/sticky.html">生活</a></li>
+                    <li><a href="/timepicker.html">健身</a></li>
+                    <li><a href="/tooltip.html">世界</a></li>
+                </ul>
             </li>
-            <li class="uk-active">
-                <a href="layouts_portfolio.html">Portfolio</a>
-            </li>
-            <li>
-                <a href="layouts_blog.html">Blog</a>
-            </li>
-            <li>
-                <a href="layouts_documentation.html">Documentation</a>
-            </li>
-            <li>
-                <a href="layouts_contact.html">Contact</a>
-            </li>
-            <li>
-                <a href="layouts_login.html">Login</a>
-            </li>
+            <li><a href="/core.html">新闻</a></li>
+            <li><a href="/customizer.html">体育</a></li>
+            <li><a href="showcase/index.html">军事</a></li>
+            <li><a href="/tutorials.html">剧集</a></li>
+            <li><a href="/tutorials.html">电影</a></li>
         </ul>
+
     </div>
+
 </div>
+
 </body>
 </html>

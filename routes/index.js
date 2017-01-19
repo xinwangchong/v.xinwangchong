@@ -3,7 +3,7 @@ var db = require('./common/db.js');
 var router = express.Router();
 
 router.get('/', function (req, res, next) {
-    var sql = "SELECT * FROM crawler_video LIMIT 0,10 ";
+    var sql = "SELECT * FROM crawler_video LIMIT 0,50 ";
     db.query(sql, function (err, result) {
         if (err) {
             throw err;

@@ -1,0 +1,43 @@
+.logo-font{
+  display: inline-block;
+  vertical-align: middle;
+  color: #ff3c00;
+  font-weight: 900;
+  margin: auto 30px auto 5px;
+}
+.xwc-uk-dropdown{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: rgba(255,255,255 ,0.8);
+  padding: 0px;
+  margin-top: -1px;
+  border-radius: 0px;
+  text-align: center;
+  line-height: 40px;
+  height: 40px;
+}
+.xwc-uk-dropdown>ul>li{
+  display: inline;
+}
+.xwc-uk-dropdown>ul>li>a{
+  text-decoration: none;
+  margin: auto 10px;
+  color: #000;
+}
+.xwc-uk-dropdown>ul>li>a:hover{
+  color: #ff3c00;
+}
+.header-nav h1{
+  border-radius: 30px;
+  background-color: #ff3c00;
+  color: #ffffff;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 900;
+
+}
