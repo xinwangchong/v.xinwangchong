@@ -3,7 +3,6 @@
   vertical-align: middle;
   color: #ff3c00;
   font-weight: 900;
-  margin: auto 30px auto 5px;
 }
 .xwc-uk-dropdown{
   position: fixed;
@@ -29,15 +28,6 @@
 .xwc-uk-dropdown>ul>li>a:hover{
   color: #ff3c00;
 }
-.header-nav h1{
-  border-radius: 30px;
-  background-color: #ff3c00;
-  color: #ffffff;
-  width: 35px;
-  height: 35px;
-  line-height: 35px;
-  text-align: center;
-  font-size: 20px;
-  font-weight: 900;
-
+.uk-navbar-nav > li.uk-active > a {
+  color: #ff3c00;
 }
