@@ -31,3 +31,19 @@
 .uk-navbar-nav > li.uk-active > a {
   color: #ff3c00;
 }
+.active-font-color{
+  color: #ff3c00!important;
+}
+.more-page{
+  display: inline-block;
+  background-color:#ff3c00 ;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 5px 15px;
+}
+.more-page:hover{
+  color: #ffffff;
+  text-decoration: none;
+}

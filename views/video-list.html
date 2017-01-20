@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>新网虫视频网</title>
+    <meta name="description" content="">
+    <meta name="author" content="新网虫视频网">
+    <meta name="keywords" content="娱乐、明星、短视频、全网视频、时事新闻">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon.png">
+    <link rel="stylesheet" href="/core/css/uikit.gradient.css"/>
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/core/js/uikit.js"></script>
+    <script src="/core/js/components/sticky.js"></script>
+
+</head>
+<body class="tm-background">
+<nav class="tm-navbar uk-navbar uk-navbar-attached" data-uk-sticky="{boundary:'true'}" style="z-index: 1000;">
+    <div class="uk-container uk-container-center">
+        <a class="uk-navbar-brand uk-hidden-small" href="index.html"><img class="uk-margin uk-margin-remove"
+                                                                          src="/images/xwc_logo.png" width="32"
+                                                                          height="32" title="新网虫" alt="新网虫"><span
+                class="logo-font">新网虫●视频</span></a>
+
+        <ul class="uk-navbar-nav uk-hidden-small">
+            <li><a href="/">首页</a></li>
+            <li class="uk-parent <% if(p_active=='0'){%>uk-active<%} %>" data-uk-dropdown>
+                <a href="javascript:void(0);">娱乐</a>
+                <div class="uk-dropdown xwc-uk-dropdown">
+                    <ul>
+                        <li><a class="<% if(c_active=='1'){%>active-font-color<%} %>" href="/0/1/30/1.html">搞笑</a></li>
+                        <li><a class="<% if(c_active=='2'){%>active-font-color<%} %>" href="/0/2/30/1.html">明星</a></li>
+                        <li><a class="<% if(c_active=='3'){%>active-font-color<%} %>" href="/0/3/30/1.html">女神</a></li>
+                        <li><a class="<% if(c_active=='4'){%>active-font-color<%} %>" href="/0/4/30/1.html">美妆</a></li>
+                        <li><a class="<% if(c_active=='5'){%>active-font-color<%} %>" href="/0/5/30/1.html">男神</a></li>
+                        <li><a class="<% if(c_active=='6'){%>active-font-color<%} %>" href="/0/6/30/1.html">萌娃</a></li>
+                        <li><a class="<% if(c_active=='7'){%>active-font-color<%} %>" href="/0/7/30/1.html">美食</a></li>
+                        <li><a class="<% if(c_active=='8'){%>active-font-color<%} %>" href="/0/8/30/1.html">音乐</a></li>
+                        <li><a class="<% if(c_active=='9'){%>active-font-color<%} %>" href="/0/9/30/1.html">舞蹈</a></li>
+                        <li><a class="<% if(c_active=='10'){%>active-font-color<%} %>" href="/0/10/30/1.html">宠物</a>
+                        </li>
+                        <li><a class="<% if(c_active=='11'){%>active-font-color<%} %>" href="/0/11/30/1.html">吃秀</a>
+                        </li>
+                        <li><a class="<% if(c_active=='12'){%>active-font-color<%} %>" href="/0/12/30/1.html">手工</a>
+                        </li>
+                        <li><a class="<% if(c_active=='13'){%>active-font-color<%} %>" href="/0/13/30/1.html">影视</a>
+                        </li>
+                        <li><a class="<% if(c_active=='14'){%>active-font-color<%} %>" href="/0/14/30/1.html">生活</a>
+                        </li>
+                        <li><a class="<% if(c_active=='15'){%>active-font-color<%} %>" href="/0/15/30/1.html">健身</a>
+                        </li>
+                        <li><a class="<% if(c_active=='16'){%>active-font-color<%} %>" href="/0/16/30/1.html">世界</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="<% if(p_active=='17'){%>uk-active<%} %>"><a href="/17/17/30/1.html">新闻</a></li>
+            <li class="<% if(p_active=='18'){%>uk-active<%} %>"><a href="/18/18/30/1.html">体育</a></li>
+            <li class="<% if(p_active=='19'){%>uk-active<%} %>"><a href="/19/19/30/1.html">军事</a></li>
+            <li class="<% if(p_active=='20'){%>uk-active<%} %>"><a href="/20/20/30/1.html">剧集</a></li>
+            <li class="<% if(p_active=='21'){%>uk-active<%} %>"><a href="/21/21/30/1.html">电影</a></li>
+        </ul>
+        <div class="uk-navbar-flip">
+            <ul class="uk-navbar-nav">
+                <li class="uk-parent" data-uk-dropdown>
+                    <a href="#adv">广告入驻</a>
+                    <!--<div class="uk-dropdown xwc-uk-dropdown">
+                        <ul>
+                            <li><a href="#adv" target="_self">邮箱：zhonghuanzpz@163.com</a></li>
+                        </ul>
+                    </div>-->
+                </li>
+                <!--<li><a style="color: #ff3c00;font-weight: 700;" href="">登录</a></li>
+                <li><span style="display: inline-block;margin-top: 9px;">|</span></li>
+                <li><a style="color: #ff3c00;font-weight: 700;" href="">注册</a></li>-->
+            </ul>
+
+        </div>
+        <a style="color: #ff3c00" href="#tm-offcanvas" class="uk-navbar-toggle uk-visible-small" data-uk-offcanvas></a>
+    </div>
+</nav>
+<div class="tm-section tm-section-color-1 tm-section-colored" style="margin-top: 15px;">
+    <div class="uk-container uk-container-center uk-text-left">
+        <ul class="uk-breadcrumb">
+            <li>&nbsp;&nbsp;<a href=" "><%=p_active_text %></a></li>
+            <li class="uk-active"><span><%=c_active_text %></span></li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="tm-section tm-section-color-1 tm-section-colored">
+    <div class="uk-container uk-container-center uk-text-center">
+
+        <div class="uk-grid" data-uk-grid-margin id="video-grid">
+            <%
+            for(var i=0;i< vs.length;i++){
+            %>
+            <div class="uk-width-medium-1-6 uk-width-small-1-3">
+                <div class="uk-thumbnail" style="height: 200px;">
+                    <img src="<%=vs[i].imgUrl %>" width="200" height="200" alt="">
+                    <div class="uk-thumbnail-caption"><%=vs[i].title%></div>
+                </div>
+            </div>
+            <%
+            }
+            %>
+        </div>
+    </div>
+</div>
+<div class="tm-section tm-section-color-1 tm-section-colored" style="margin-top: 15px;">
+    <div class="uk-container uk-container-center uk-text-center">
+        <a href="javascript:void(0);" onclick="_page();" id="more" class="more-page">点击-加载更多</a>
+        <a href="javascript:void(0);" onclick="_page();" style="display: none" id="nopage" class="more-page">没有更多了</a>
+        <input type="hidden" id="pagesize" value="<%=pagesize %>"/>
+        <input type="hidden" id="pageindex" value="<%=pageindex %>"/>
+        <input type="hidden" id="pt" value="<%=p_active %>"/>
+        <input type="hidden" id="ct" value="<%=c_active %>"/>
+    </div>
+</div>
+<div class="tm-footer" style="margin:30px auto; font-size: 14px;">
+    <div class="uk-container uk-container-center uk-text-center">
+        <div class="uk-panel">
+            <p id="adv" style="color: red;font-weight: 700;">邮箱：zhonghuanzpz@163.com  |  QQ：1083447590</p>
+            <p>Copyright &copy; 2016 xinwangchong.com&nbsp;&nbsp;|&nbsp;&nbsp;京ICP备16046202号</p>
+        </div>
+    </div>
+</div>
+<div id="tm-offcanvas" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar">
+        <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon " data-uk-nav="{ multiple: true }">
+            <li><a href="/">首页</a></li>
+            <li class="uk-parent <% if(p_active=='0'){%>uk-active<%} %>"><a href="#">娱乐</a>
+                <ul class="uk-nav-sub">
+                    <li><a class="<% if(c_active=='1'){%>active-font-color<%} %>" href="/0/1/30/1.html">
+                        &nbsp;&nbsp;搞笑</a></li>
+                    <li><a class="<% if(c_active=='2'){%>active-font-color<%} %>" href="/0/2/30/1.html">
+                        &nbsp;&nbsp;明星</a></li>
+                    <li><a class="<% if(c_active=='3'){%>active-font-color<%} %>" href="/0/3/30/1.html">
+                        &nbsp;&nbsp;女神</a></li>
+                    <li><a class="<% if(c_active=='4'){%>active-font-color<%} %>" href="/0/4/30/1.html">
+                        &nbsp;&nbsp;美妆</a></li>
+                    <li><a class="<% if(c_active=='5'){%>active-font-color<%} %>" href="/0/5/30/1.html">
+                        &nbsp;&nbsp;男神</a></li>
+                    <li><a class="<% if(c_active=='6'){%>active-font-color<%} %>" href="/0/6/30/1.html">
+                        &nbsp;&nbsp;萌娃</a></li>
+                    <li><a class="<% if(c_active=='7'){%>active-font-color<%} %>" href="/0/7/30/1.html">
+                        &nbsp;&nbsp;美食</a></li>
+                    <li><a class="<% if(c_active=='8'){%>active-font-color<%} %>" href="/0/8/30/1.html">
+                        &nbsp;&nbsp;音乐</a></li>
+                    <li><a class="<% if(c_active=='9'){%>active-font-color<%} %>" href="/0/9/30/1.html">
+                        &nbsp;&nbsp;舞蹈</a></li>
+                    <li><a class="<% if(c_active=='10'){%>active-font-color<%} %>" href="/0/10/30/1.html">
+                        &nbsp;&nbsp;宠物</a></li>
+                    <li><a class="<% if(c_active=='11'){%>active-font-color<%} %>" href="/0/11/30/1.html">
+                        &nbsp;&nbsp;吃秀</a></li>
+                    <li><a class="<% if(c_active=='12'){%>active-font-color<%} %>" href="/0/12/30/1.html">
+                        &nbsp;&nbsp;手工</a></li>
+                    <li><a class="<% if(c_active=='13'){%>active-font-color<%} %>" href="/0/13/30/1.html">
+                        &nbsp;&nbsp;影视</a></li>
+                    <li><a class="<% if(c_active=='14'){%>active-font-color<%} %>" href="/0/14/30/1.html">
+                        &nbsp;&nbsp;生活</a></li>
+                    <li><a class="<% if(c_active=='15'){%>active-font-color<%} %>" href="/0/15/30/1.html">
+                        &nbsp;&nbsp;健身</a></li>
+                    <li><a class="<% if(c_active=='16'){%>active-font-color<%} %>" href="/0/16/30/1.html">
+                        &nbsp;&nbsp;世界</a></li>
+                </ul>
+            </li>
+            <li class="<% if(p_active=='17'){%>uk-active<%} %>"><a href="/17/17/30/1.html">新闻</a></li>
+            <li class="<% if(p_active=='18'){%>uk-active<%} %>"><a href="/18/18/30/1.html">体育</a></li>
+            <li class="<% if(p_active=='19'){%>uk-active<%} %>"><a href="/19/19/30/1.html">军事</a></li>
+            <li class="<% if(p_active=='20'){%>uk-active<%} %>"><a href="/20/20/30/1.html">剧集</a></li>
+            <li class="<% if(p_active=='21'){%>uk-active<%} %>"><a href="/21/21/30/1.html">电影</a></li>
+        </ul>
+
+    </div>
+
+</div>
+<script type="text/javascript">
+    function _page() {
+        var _pageindex=$("#pageindex").val();
+        var _pagesize=$("#pagesize").val();
+        var _pt=$("#pt").val();
+        var _ct=$("#ct").val();
+        var _newPageIndex=parseInt(_pageindex)+1;
+        var _url="http://localhost:3000/page/"+_pt+"/"+_ct+"/"+_pagesize+"/"+_newPageIndex+".html";
+        $.getJSON(_url,function (result) {
+            if(result==null||result==undefined||result.length==0){
+                $("#more").fadeOut();
+                $("#nopage").fadeIn();
+                return;
+            }
+            for(var i=0;i<result.length;i++){
+                var _html='<div class="uk-width-medium-1-6 uk-width-small-1-3">';
+                _html+='<div class="uk-thumbnail" style="height: 200px;">';
+                _html+=' <img src="'+result[i].imgUrl+'" width="200" height="200" alt="">';
+                _html+='<div class="uk-thumbnail-caption">'+result[i].title+'</div>';
+                _html+='</div>';
+                _html+='</div>';
+                $("#video-grid").append(_html);
+            }
+            $("#pageindex").val(_newPageIndex);
+        });
+    }
+
+</script>
+</body>
+</html>
