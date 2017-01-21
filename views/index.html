@@ -14,32 +14,94 @@
     <script src="/js/jquery.min.js"></script>
     <script src="/core/js/uikit.js"></script>
     <script src="/core/js/components/sticky.js"></script>
-    <!--<script type="text/javascript" src="/plugins/sewise-player-master/player/sewise.player.min.js"></script>-->
     <script src="/plugins/player/sewise.player.min.js"></script>
 </head>
 <body class="tm-background">
-
+<input type="button" onclick="_doStopPlayer()" value="停止">
 <div id="container" style="width: 640px; height: 480px; ">
+    <!--http://flv1.vodfile.m1905.com/movie/SY_fengyun2_100423.flv?key1=201701201701&key2=565ff4d73c90926b1a094589ba0723fa-->
     <script type="text/javascript">
+        /*http://mvvideo1.meitudata.com/587f7d12e9ec54642.mp4*/
+
         SewisePlayer.setup({
             server: "vod",
-            type: "flv",
-            videourl: "http://flv1.vodfile.m1905.com/movie/SY_fengyun2_100423.flv?key1=201701201701&key2=565ff4d73c90926b1a094589ba0723fa",
-            poster: "http://jackzhang1204.github.io/materials/poster.png",
-            skin: "vodWhite",
-            title: "Tile 标题",
-            lang: 'en_US',
-            claritybutton: 'disable'
+            type: 'mp4',
+            logo:'/images/xwc_v_logo.png',
+            videourl: 'http://mvvideo1.meitudata.com/587f7d12e9ec54642.mp4',
+            poster: 'http://image1.3g.joy.cn/video/240/60240150/1479871644806.jpg',
+            skin: "vodFlowPlayer",
+            title: 'nin',
+            buffer:'5',/*播放器开始播放前所需下载的缓冲数据时长，单位：秒*/
+            lang: 'zh_CN',
+            claritybutton: 'disable',/*是否显示多码率按钮*/
+            autostart:'true',/*是否自动播放*/
+            draggable:'true',/*进度条是否可以拖动*/
+            published:'1',/*取值：0或1,0表示：不需要检查节目是否发布，即无论节目是否发布都尝试去播放节目的源；1表示：需要检查节目的发布状态，未发布则不请求节目源地址*/
+            volume:'1',/*播放器默认音量值*/
+            controlbardisplay:'enable',/*是否显示播放控制栏*/
+            topbardisplay:'enable',/*是否显示顶部标题*/
+            customdatas: {
+                "logoLink": "http://v.xinwangchong.com/"
+            },/*自定义参数对象，皮肤开发者专用定义参数*/
+            primary:'html5',/*播放器启用的优先模块，当视频、流同时支持HTML5或Flash播放时，该参数用于确定优先HTML5还是Flash播放。*/
+            /*fallbackurls:{
+             mp4: "download.3g.joy.cn/video/240/60240892/1484704474365_hd.mp4"
+             },*//*点播视频播放时的兼容回退地址，当videourl地址不支持时将一一验证回退地址的可播放性*/
         }, "container");
+
+       /* $(function () {
+            $('.v-container').each(function (index) {
+                $(this).click(function () {
+                    var _type=$(this).attr('v-type');
+                    var _title=$(this).attr('v-title');
+                    var _poster=$(this).attr('v-poster');
+                    var _videourl=$(this).attr('v-videourl');
+                    if(_type==null||_type==undefined||_type==''){
+                        _type='mp4';
+                    }
+                    _initSewisePlayer(_type,_videourl,_poster,_title) ;
+                });
+            });
+        });
+        function _initSewisePlayer(_type,_videourl,_poster,_title) {
+            SewisePlayer.setup({
+                server: "vod",
+                type: ''+_type+'',
+                logo:'/images/xwc_v_logo.png',
+                videourl: ''+_videourl+'',
+                poster: ''+_poster+'',
+                skin: "vodFlowPlayer",
+                title: ''+_title+'',
+                buffer:'5',/!*播放器开始播放前所需下载的缓冲数据时长，单位：秒*!/
+                lang: 'zh_CN',
+                claritybutton: 'disable',/!*是否显示多码率按钮*!/
+                autostart:'true',/!*是否自动播放*!/
+                draggable:'true',/!*进度条是否可以拖动*!/
+                published:'1',/!*取值：0或1,0表示：不需要检查节目是否发布，即无论节目是否发布都尝试去播放节目的源；1表示：需要检查节目的发布状态，未发布则不请求节目源地址*!/
+                volume:'1',/!*播放器默认音量值*!/
+                controlbardisplay:'enable',/!*是否显示播放控制栏*!/
+                topbardisplay:'enable',/!*是否显示顶部标题*!/
+                customdatas: {
+                    "logoLink": "http://v.xinwangchong.com/"
+                },/!*自定义参数对象，皮肤开发者专用定义参数*!/
+                primary:'html5',/!*播放器启用的优先模块，当视频、流同时支持HTML5或Flash播放时，该参数用于确定优先HTML5还是Flash播放。*!/
+                /!*fallbackurls:{
+                    mp4: "download.3g.joy.cn/video/240/60240892/1484704474365_hd.mp4"
+                },*!//!*点播视频播放时的兼容回退地址，当videourl地址不支持时将一一验证回退地址的可播放性*!/
+            }, "container");
+        }
+*/
+        function _doStopPlayer() {
+            SewisePlayer.doStop();
+        }
     </script>
 </div>
-
 <nav class="tm-navbar uk-navbar uk-navbar-attached" data-uk-sticky="{boundary:'true'}" style="z-index: 1000;">
     <div class="uk-container uk-container-center">
         <a class="uk-navbar-brand uk-hidden-small" href="index.html"><img class="uk-margin uk-margin-remove"
                                                                           src="/images/xwc_logo.png" width="32"
                                                                           height="32" title="新网虫" alt="新网虫"><span
-                class="logo-font">新网虫●视频</span></a>
+                class="logo-font">新网虫TV</span></a>
 
         <ul class="uk-navbar-nav uk-hidden-small">
             <li class="uk-active"><a href="/">首页</a></li>
@@ -76,15 +138,7 @@
             <ul class="uk-navbar-nav">
                 <li class="uk-parent" data-uk-dropdown>
                     <a href="#adv">广告入驻</a>
-                    <!--<div class="uk-dropdown xwc-uk-dropdown">
-                        <ul>
-                            <li><a href="#adv" target="_self">邮箱：zhonghuanzpz@163.com</a></li>
-                        </ul>
-                    </div>-->
                 </li>
-                <!--<li><a style="color: #ff3c00;font-weight: 700;" href="">登录</a></li>
-                <li><span style="display: inline-block;margin-top: 9px;">|</span></li>
-                <li><a style="color: #ff3c00;font-weight: 700;" href="">注册</a></li>-->
             </ul>
 
         </div>
@@ -98,7 +152,7 @@
             <%
             for(var i=0;i< vs.length;i++){
             %>
-            <div class="uk-width-medium-1-6 uk-width-small-1-3">
+            <div  class="uk-width-medium-1-6 uk-width-small-1-3 v-container" v-title="<%=vs[i].title%>" v-poster="<%=vs[i].imgUrl%>" v-videourl="<%=vs[i].videoUrl%>" v-type="<%=vs[i].videoType%>">
                 <div class="uk-thumbnail">
                     <img src="<%=vs[i].imgUrl %>" width="200" height="200" alt="">
                     <div class="uk-thumbnail-caption"><%=vs[i].title%></div>
@@ -121,7 +175,7 @@
 <div class="tm-footer" style="margin:30px auto; font-size: 14px;">
     <div class="uk-container uk-container-center uk-text-center">
         <div class="uk-panel">
-            <p id="adv" style="color: red;font-weight: 700;">邮箱：zhonghuanzpz@163.com  |  QQ：1083447590</p>
+            <p id="adv" style="color: red;font-weight: 700;">邮箱：zhonghuanzpz@163.com | QQ：1083447590</p>
             <p>Copyright &copy; 2016 xinwangchong.com&nbsp;&nbsp;|&nbsp;&nbsp;京ICP备16046202号</p>
         </div>
     </div>
@@ -162,29 +216,28 @@
 </div>
 <script type="text/javascript">
     function _page() {
-        var _pageindex=$("#pageindex").val();
-        var _pagesize=$("#pagesize").val();
-        var _newPageIndex=parseInt(_pageindex)+1;
-        var _url="http://localhost:3000/page/"+_pagesize+"/"+_newPageIndex+".html";
-        $.getJSON(_url,function (result) {
-            if(result==null||result==undefined||result.length==0){
+        var _pageindex = $("#pageindex").val();
+        var _pagesize = $("#pagesize").val();
+        var _newPageIndex = parseInt(_pageindex) + 1;
+        var _url = "http://localhost:3000/page/" + _pagesize + "/" + _newPageIndex + ".html";
+        $.getJSON(_url, function (result) {
+            if (result == null || result == undefined || result.length == 0) {
                 $("#more").fadeOut();
                 $("#nopage").fadeIn();
                 return;
             }
-            for(var i=0;i<result.length;i++){
-                var _html='<div class="uk-width-medium-1-6 uk-width-small-1-3">';
-                _html+='<div class="uk-thumbnail" style="height: 200px;">';
-                _html+=' <img src="'+result[i].imgUrl+'" width="200" height="200" alt="">';
-                _html+='<div class="uk-thumbnail-caption">'+result[i].title+'</div>';
-                _html+='</div>';
-                _html+='</div>';
+            for (var i = 0; i < result.length; i++) {
+                var _html = '<div class="uk-width-medium-1-6 uk-width-small-1-3">';
+                _html += '<div class="uk-thumbnail" style="height: 200px;">';
+                _html += ' <img src="' + result[i].imgUrl + '" width="200" height="200" alt="">';
+                _html += '<div class="uk-thumbnail-caption">' + result[i].title + '</div>';
+                _html += '</div>';
+                _html += '</div>';
                 $("#video-grid").append(_html);
             }
             $("#pageindex").val(_newPageIndex);
         });
     }
-
 </script>
 </body>
 </html>
