@@ -1,7 +1,7 @@
 .logo-font{
   display: inline-block;
   vertical-align: middle;
-  color: #ff3c00;
+  color: #F40;
   font-weight: 900;
 }
 .xwc-uk-dropdown{
@@ -26,17 +26,17 @@
   color: #000;
 }
 .xwc-uk-dropdown>ul>li>a:hover{
-  color: #ff3c00;
+  color: #F40;
 }
 .uk-navbar-nav > li.uk-active > a {
-  color: #ff3c00;
+  color: #F40;
 }
 .active-font-color{
-  color: #ff3c00!important;
+  color: #F40!important;
 }
 .more-page{
   display: inline-block;
-  background-color:#ff3c00 ;
+  background-color:#F40 ;
   color: #ffffff;
   text-decoration: none;
   font-weight: 600;
@@ -46,4 +46,10 @@
 .more-page:hover{
   color: #ffffff;
   text-decoration: none;
+}
+@media screen and (min-width: 678px) {
+  #video-container {
+    width: 600px;
+    height: 400px;
+  }
 }

@@ -33,7 +33,7 @@ router.get('/page/:pagesize/:pageindex.html', function (req, res, next) {
 /*
  * 根据类型加载不同类型的视频数据页面
  * */
-router.get('/:pt/:type/:pagesize/:pageindex.html', function (req, res, next) {
+router.get('/initpage/:pt/:type/:pagesize/:pageindex.html', function (req, res, next) {
     var _type=req.params.type;
     var _pagesize=req.params.pagesize;
     var _pageindex=req.params.pageindex;
@@ -56,7 +56,7 @@ router.get('/page/:pt/:type/:pagesize/:pageindex.html', function (req, res, next
     var _value=getTypeValueByKey(_type);
     var vs=_value.split('-');
     var sql = "SELECT * FROM crawler_video WHERE parentType='"+vs[0]+"' and type='"+vs[1]+"'  order by createTime ASC LIMIT "+(_pageindex-1)*_pagesize+","+_pagesize*_pageindex;
-   console.log(sql)
+
     db.query(sql, function (err, result) {
         if (err) {
             throw err;
@@ -64,6 +64,12 @@ router.get('/page/:pt/:type/:pagesize/:pageindex.html', function (req, res, next
             res.json(result);
         }
     });
+});
+router.get('/detail/:pt/:type/:id.html', function (req, res, next) {
+    var _type=req.params.type;
+    var _id=req.params.id;
+    var _pt=req.params.pt;
+    res.render('video-detail',{p_active:_pt,c_active:_type,id:_id});
 });
 function getTypeValueByKey(key) {
     var map = {
