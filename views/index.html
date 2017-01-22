@@ -73,7 +73,7 @@
             <%
             for(var i=0;i< vs.length;i++){
             %>
-            <div  class="uk-width-medium-1-6 uk-width-small-1-3 v-container" v-id="<%=vs[i].id%>" v-title="<%=vs[i].title%>" v-poster="<%=vs[i].imgUrl%>" v-videourl="<%=vs[i].videoUrl%>" v-type="<%=vs[i].videoType%>">
+            <div  onclick="toVedioDetailClick(this)" class="uk-width-medium-1-6 uk-width-small-1-3 v-container" v-id="<%=vs[i].id%>" v-title="<%=vs[i].title%>" v-poster="<%=vs[i].imgUrl%>" v-videourl="<%=vs[i].videoUrl%>" v-type="<%=vs[i].videoType%>">
                 <div class="uk-thumbnail">
                     <img src="<%=vs[i].imgUrl %>" width="200" height="200" alt="">
                     <div class="uk-thumbnail-caption"><%=vs[i].title%></div>

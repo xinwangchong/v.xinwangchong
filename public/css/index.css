@@ -34,6 +34,7 @@
 .active-font-color{
   color: #F40!important;
 }
+
 .more-page{
   display: inline-block;
   background-color:#F40 ;
@@ -52,4 +53,7 @@
     width: 600px;
     height: 400px;
   }
+}
+#video-container{
+  margin:  0 auto;
 }

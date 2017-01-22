@@ -49,15 +49,15 @@ window.SewisePlayerSkin.localSkin =
 		'</div>' + 
 		'<div class="buffer">' + 
 			'<div class="buffer-bg">背景图片</div>' + 
-			'<div class="buffer-text">' + 
+			/*'<div class="buffer-text">' +
 				'<div class="buffer-text-tip">缓冲</div>' + 
 				'<div class="buffer-text-bufferPt">...</div>' + 
-			'</div>' + 
+			'</div>' + */
 		'</div>' + 
 		'<div class="big-play-btn">' + 
 			'<a href="javascript:;" class="big-play-icon" tabindex="1">大播放按钮</a>' + 
 		'</div>' + 
-		'<div class="clarity-switch-btn">' + 
+		/*'<div class="clarity-switch-btn">' +
 			'<a href="javascript:;" class="clarity-btn-text" tabindex="1">默认</a>' + 
-		'</div>' + 
+		'</div>' + */
 	'</div>';
